@@ -16,27 +16,27 @@ import java.util.ArrayList;
 public class ProdutosController {
     private final ProdutoService produtoService;
 
-    @GetMapping("/produtos")
+    @GetMapping("/v1/produtos")
     public ResponseEntity<ArrayList<ProdutoEntity>> listarProdtuos() {
         return produtoService.listarProdutos();
     }
 
-    @GetMapping("/produtos/{id}")
+    @GetMapping("/v1/produtos/{id}")
     public ResponseEntity<ProdutoEntity> findById (@PathVariable int id) {
         return produtoService.findById(id);
     }
 
-    @PostMapping("/produtos")
+    @PostMapping("/v1/produtos")
     public ResponseEntity<ProdutoEntity> createProduct (@RequestBody ProdutoDto dto) {
         return produtoService.createProduct(dto);
     }
 
-    @PutMapping("/produtos/{id}")
+    @PutMapping("/v1/produtos/{id}")
     public ResponseEntity<ProdutoEntity> editById(@PathVariable int id, @RequestBody ProdutoDto dto) {
         return produtoService.editById(id, dto);
     }
 
-    @DeleteMapping("/produtos/{id}")
+    @DeleteMapping("/v1/produtos/{id}")
     public HttpStatusCode deleteById(@PathVariable int id) {
         return produtoService.deleteProduct(id);
     }
