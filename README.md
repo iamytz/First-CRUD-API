@@ -80,9 +80,9 @@ A API conta com documentação interativa via **Swagger UI / OpenAPI 3**, onde �
 | :--- | :--- | :--- | :--- |
 | `POST` | `/api/v1/produtos` | Cadastra um novo produto | Body JSON (`ProdutoDTO`) |
 | `GET` | `/api/v1/produtos` | Lista produtos paginados | `page` (int), `size` (int), `sort` (string) |
-| `GET` | `/api/v1/produtos/{id}` | Busca produto por ID | `id` (Long) no path |
-| `PUT` | `/api/v1/produtos/{id}` | Atualiza um produto por ID | `id` (Long) no path e Body JSON |
-| `DELETE` | `/api/v1/produtos/{id}` | Remove um produto por ID | `id` (Long) no path |
+| `GET` | `/api/v1/produtos/{id}` | Busca produto por ID | `id` (int) no path |
+| `PUT` | `/api/v1/produtos/{id}` | Atualiza um produto por ID | `id` (int) no path e Body JSON |
+| `DELETE` | `/api/v1/produtos/{id}` | Remove um produto por ID | `id` (int) no path |
 
 ---
 
