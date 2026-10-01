@@ -13,9 +13,9 @@ public class ProdutoService {
 
     private static final ArrayList<ProdutoEntity> PRODUTOS = new ArrayList<>();
     static {
-        PRODUTOS.add(ProdutoEntity.builder().id(1).name("IPhone 67 Prox Max").price(20000f).quantity(10).build());
-        PRODUTOS.add(ProdutoEntity.builder().id(2).name("Notebook Gamer").price(7000f).quantity(10).build());
-        PRODUTOS.add(ProdutoEntity.builder().id(3).name("Playstation 6").price(12000f).quantity(10).build());
+        PRODUTOS.add(ProdutoEntity.builder().id(1).name("Teclado Mecânico RGB").price(299.9f).quantity(50).build());
+        PRODUTOS.add(ProdutoEntity.builder().id(2).name("Notebook Gamer").price(7000f).quantity(12).build());
+        PRODUTOS.add(ProdutoEntity.builder().id(3).name("Playstation 5").price(4980f).quantity(27).build());
     }
 
     public ResponseEntity<ArrayList<ProdutoEntity>> listarProdutos() {
